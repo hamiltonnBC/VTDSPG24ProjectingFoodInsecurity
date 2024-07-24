@@ -16,6 +16,10 @@ The aim of this project was to assist our stakeholder, Feeding Southwest Virgini
 
 ### Findings
 Our model had a very high level of accuracy and predicted a downward trend of food insecurity for all years, excluding COVID-19 related spikes. The details of these findings are displayed in an interactive web app.
+An overview of the project can be found below, and a pdf version here [Food Insecurity Symposium Poster](FoodInsecuritySymposiumPoster.pdf)
+![Food Insecurity Symposium Poster](PosterImage.jpg)
+
+The website can be found through the QR code on the poster. 
 
 ## Repository Structure
 - `Server`: Contains server-side logic.
