@@ -694,7 +694,7 @@ ui <- dashboardPage(
                 width = 300,
                 alt = "picture of Emily Gard"
               ),
-              tags$figcaption(style = "font-size: 16px;", HTML("Emily Gard
+              tags$figcaption(style = "font-size: 16px;", HTML("<a href='www.linkedin.com/in/emilygard' target='_blank'>Emily Gard</a>
                               <br><br>Virginia Tech, Undergraduate in Political Science and Sociology"))
             ),
             tags$figure(
@@ -704,7 +704,7 @@ ui <- dashboardPage(
                 width = 300,
                 alt = "picture of Nicholas Hamilton"
               ),
-              tags$figcaption(style = "font-size: 16px;", HTML("Nicholas Hamilton
+              tags$figcaption(style = "font-size: 16px;", HTML("<a href='www.linkedin.com/in/nicholas-trey-hamilton' target='_blank'>Nicholas Hamilton</a>
                               <br><br>Berea College, Undergraduate in Computer Science with a minor in Sociology"))
             ),
             tags$figure(
@@ -714,7 +714,7 @@ ui <- dashboardPage(
                 width = 300,
                 alt = "picture of Mia Jones"
               ),
-              tags$figcaption(style = "font-size: 16px;", HTML("Mia Jones
+              tags$figcaption(style = "font-size: 16px;", HTML("<a href='https://www.linkedin.com/in/mia-jones-mj48' target='_blank'>Mia Jones</a>
                               <br><br>University of Massachusetts Lowell, Undergraduate in Business Administration
                               <br>(Marketing and Analytics/Operations Management)"))
               )
