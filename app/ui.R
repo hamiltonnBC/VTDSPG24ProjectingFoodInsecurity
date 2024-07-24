@@ -284,7 +284,7 @@ ui <- dashboardPage(
           margin-bottom: 8px;
         }
         .methodology-text h6 {
-          font-size: 12px;
+          font-size: 15px;
           margin-top: 15px;
           margin-bottom: 8px;
         }
@@ -319,6 +319,7 @@ ui <- dashboardPage(
           width: 30%;
           float: right;
           padding-left: 20px;
+            padding-right: 10px;  
           border-left: 1px solid #ccc;
         }
         .clearfix::after {
@@ -368,7 +369,7 @@ ui <- dashboardPage(
                     tags$figure(
                       class = "centerFigure",
                       tags$img(
-                        src = "forecastDiagram.png",
+                        src = "OurModelFlowDiagram.jpg",
                         width = "100%",
                         alt = "Diagram illustrating the methodology of our forecast model"
                       )
