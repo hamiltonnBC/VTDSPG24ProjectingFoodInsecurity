@@ -1,0 +1,12 @@
+name: VTDS
+title: VTDS
+username: virginiatechdatascienceforthepublicgood2024foodinsecurity
+account: virginiatechdatascienceforthepublicgood2024foodinsecurity
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12290862
+bundleId: 8839045
+url: https://virginiatechdatascienceforthepublicgood2024foodinsecurity.shinyapps.io/VTDS/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
