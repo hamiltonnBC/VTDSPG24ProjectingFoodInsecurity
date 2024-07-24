@@ -424,51 +424,46 @@ ui <- dashboardPage(
                 menu = "Accuracy",
                 content = div(
                   class = "methodology-text",
-                  h3("Actual vs Predicted Food Insecurity Rates (2010-2022)"),
+                  h3("Model Accuracy: Predicted vs. Actual Food Insecurity Rates State Level (2010-2022)"),
                   uiOutput("accuracyDescription"),
                   tags$figure(
                     class = "centerFigure",
                     tags$img(
                       src = "State_predicted_vs_actual_scatter_with_metrics.png",
-                      width = 600,
-                      alt = "Line graph depicting our accuracy rate overall"
+                      width = 1400,
+                      alt = "Scatter plot comparing predicted vs. actual food insecurity rates"
                     )
                   ),
                   tags$hr(),
-                  h3("Actual vs Predicted Food Insecurity Rates by State (2010-2027)"),
-                  uiOutput("accuracyDescription2"),
+                  h3("Comparative Analysis: County-Level Food Insecurity Estimates"),
+                  uiOutput("comparisonDescription"),
+                  tags$figure(
+                    class = "centerFigure",
+                    tags$img(
+                      src = "Comparison_food_insecurity_analysis.png",
+                      width = 1300,
+                      alt = "Comparison of county-level food insecurity estimates"
+                    )
+                  ),
+                  tags$hr(),
+                  h3("State-by-State Analysis: Food Insecurity Rate Projections (2010-2027)"),
+                  uiOutput("stateProjectionsDescription"),
                   tags$figure(
                     class = "centerFigure",
                     tags$img(
                       src = "All_States_FI_Rate_Projections2.png",
                       width = 800,
-                      alt = "Line graphs depicting our accuracy rate by state"
-                    )
-                  ),
-                  tags$figure(
-                    class = "centerFigure",
-                    tags$img(
-                      src = "All_States_FI_Rate_Projections2.png",
-                      width = 800,
-                      alt = "Line graphs depicting our accuracy rate by state"
-                    )
-                  ),
-                  tags$figure(
-                    class = "centerFigure",
-                    tags$img(
-                      src = "All_States_FI_Rate_Projections3.png",
-                      width = 800,
-                      alt = "Line graphs depicting our accuracy rate by state"
-                    )
-                  ),
-                  tags$figure(
-                    class = "centerFigure",
-                    tags$img(
-                      src = "All_States_FI_Rate_Projections3.png",
-                      width = 800,
-                      alt = "Line graphs depicting our accuracy rate by state"
+                      alt = "Food insecurity rate projections by state (Part 1)"
                     )
                   )
+                  # tags$figure(
+                  #   class = "centerFigure",
+                  #   tags$img(
+                  #     src = "All_States_FI_Rate_Projections2.png",
+                  #     width = 1300,
+                  #     alt = "Food insecurity rate projections by state (Part 2)"
+                  #   )
+                  # )
                 )
               )
             ),

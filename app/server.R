@@ -203,15 +203,33 @@ function(input, output) {
   # 
   #Accuracy outputs
   output$accuracyDescription <- renderUI({
-    p("We tested the accuracy of our model to ensure it makes predictions that are as correct as possible.
-    The graph below shows our predicted food insecurity rates versus the food insecurity rate estimates from the Current Population Survey.
-    As displayed in the chart, we have above a 98% accuracy for all of the years at the state-level.
-     ")
+    HTML("
+    <p>To ensure the reliability of our predictive model, we conducted rigorous accuracy testing. The scatter plot below illustrates the correlation between our predicted food insecurity rates and the estimates derived from the Current Population Survey (CPS). This is a sample of 1000 results.</p>
+    <p>As evidenced by the chart, our model demonstrates a high degree of accuracy, with a correlation coefficient exceeding 98% across all years at the state level. This strong alignment between predicted and observed values underscores the robustness of our methodological approach.</p>
+  ")
   })
-  output$accuracyDescription2 <- renderUI({
-    p("The graphs below show our predicted food insecurity rates (red dotted line) compared to the
-   Current Population Survey food insecurity estimates (blue line) at the state-level.
-     ")
+  
+  output$comparisonDescription <- renderUI({
+    HTML("
+    <p>The following visualization presents a comparative analysis of food insecurity estimates at different geographical levels. Specifically, it illustrates the percentage differences between:</p>
+    <ul>
+      <li>Our model's county-level estimates</li>
+      <li>Map the Meal Gap (MMG) county-level estimates</li>
+      <li>State-level food insecurity estimates</li>
+    </ul>
+    <p>This comparison provides insight into the variability of food insecurity measures across different estimation methods and geographical scales. It is important to note that this covers the continental US, while MMG completes their analysis including Alaska and Hawaii.</p>
+  ")
+  })
+  
+  output$stateProjectionsDescription <- renderUI({
+    HTML("
+    <p>The graphs below offer a random selection state-by-state analysis of food insecurity trends and projections:</p>
+    <ul>
+      <li>Blue lines represent the historical food insecurity estimates from the Current Population Survey (CPS).</li>
+      <li>Red dotted lines indicate our model's predictions, extending from 2010 to 2027.</li>
+    </ul>
+    <p>These projections provide valuable insights into potential future trends in food insecurity across different states, facilitating targeted policy planning and resource allocation.</p>
+  ")
   })
   
 
